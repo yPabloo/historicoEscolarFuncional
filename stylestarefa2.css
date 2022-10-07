@@ -1,0 +1,55 @@
+body {
+    background: brown;
+    text-align: center;
+    font-style: italic;
+}
+
+button {
+border: 1px solid black;
+transition: filter 0.2s;
+}
+
+input, button { 
+padding: 8px;
+font-size: 15px;
+border-radius: 500px;
+}
+
+#estrutura {
+    background-color: burlywood;
+    border-radius: 500px;
+    width: 54%;
+    margin: auto;
+    border: 1px solid black;
+    font-size: 21px;
+}
+
+h4 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.informacaoTabela {
+    text-align: left;
+    font-style: normal;
+    font-size: 17px;
+    border: 1px solid black;
+    width: 47%;
+    margin: auto;
+    background-color: sandybrown;
+    border-radius: 10px;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 12px;
+}
+
+span {
+    color: red;
+}
+

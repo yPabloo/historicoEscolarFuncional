@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Juntando um parte de css externa-->
+    <link rel="stylesheet" href="./stylestarefa2.css"/>
+    <title>Histórico Escolar</title>
+</head>
+<body>
+    <!--Juntando uma parte de javascrip externa-->
+    <script src="tarefa2.js"></script>
+    <!--Criando a estrutura do Html-->
+    <div>
+        <form id="estrutura">
+            <h1>
+                Histórico Escolar
+            </h1>
+            <!--Criando os inputs e um botão para enviar as futuras informações que serão passadas nos inputs-->
+            <input id="ano_periodo" type="text" placeholder="Ano/Período Letivo"/>
+            &nbsp;<input id="codigoDisciplina" type="text" placeholder="Código da Disciplina"/>
+            &nbsp;<input id="cargaH" type="number" placeholder="Carga Horária"/>
+            <br>
+            <br>
+            <input id="frequencia" type="number" placeholder="Frequência"/>
+            &nbsp;<input id="nota" type="number" placeholder="Nota"/>
+            <br>
+            <br>
+            <!--Criando uma função "dadosPessoais" para passar esse valores de cada input para o arquivo javascript-->
+            <button type="reset" onclick="dadosPessoais(ano_periodo.value,codigoDisciplina.value,cargaH.value,frequencia.value,nota.value)">
+                Submeter
+            </button>
+            <br>
+            <br>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <div class="informacaoTabela">
+        <!--Criando uma tabela para inserir as informações fornecidas pelos inputs-->
+        <table id="tabInf">
+        <thead>
+            <tr>
+                <th>Ano/Período</th>
+                <th>Código da Disciplina</th>
+                <th>Carga Horária</th>
+                <th>Frequência</th>
+                <th>Nota</th>
+            </tr>
+
+        </thead>
+        </table>
+
+        <h4>Outros dados de interesse:</h4>
+
+        <div>
+            <!--Criando outra tabela com o intuito de inserir os resultados das funções propostas pelo professor-->
+            <table class="outros_dados">
+                <tr>
+                    <th>Quantidade de períodos cursados: <span id="quantPeriodo"></span></th>
+                </tr>
+                <tr>
+                    <th>Média geral ponderada pela CH: <span id="ponderadaCh"></span></th>
+                </tr>
+                <tr>
+                    <th>Desvio padrão da média geral: <span id="desvioPadrao"></span></th>
+                </tr>
+                <tr>
+                    <th>Lista de disciplinas com aprovação: <span id="aprovacao"></span></th>
+                </tr>
+                <tr>
+                    <th>Lista de disciplinas com reprovação: <span id="reprovacao"></span></th>
+                </tr>
+                <tr>
+                    <th>Carga horária total: <span id="chTotal"></span></th>
+                </tr>
+                <tr>
+                    <th>Média geral ponderada por departamento: <span id="departamento"></span></th>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
